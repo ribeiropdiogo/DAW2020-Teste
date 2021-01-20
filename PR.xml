@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>Teste</key>
+        <title>Teste</title>
+        <bdate>20/01/2021</bdate>
+        <edate>20/01/2021</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a84442">
+            <name>Diogo Pinto Ribeiro</name>
+            <email>a84442@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <h1>Exercício 1</h1>
+        <p>
+            O primeiro passo foi corrigir os erros no ficheiro json. Para isso adicionei aspas nos
+            nomes de cada atributo bem como em alguns valores em falta, e também adicionei vírgulas em falta.
+        </p>
+        <p>
+            Na primeira alínea usei as capacidade do meu editor de text para selecionar todas as ocorrencias
+            de ref e copiá-las para um campo _id e substituir os / por _ .
+            Para criar os campos pai e mae comecei por adicionar usando a mesma técnica os 2 campos vazios.
+            De seguida usei o meu editor de texto com expressões regulares para apanhar os nomes: "(?<=Pai: ).*(?=;)" 
+            e "(?<=Pai: ).*(?=")". 
+        </p>
+        <p>
+            Para importar os dados usei o comando: mongoimport --db TESTEDAW --collection batismos --file batismos.json --jsonArray
+        </p>
+        <p>
+            Para correr o servidor, na pasta ex1/, basta executar os comandos:
+                npm i
+            e 
+                npm start
+        </p>
+        
+        <h1>Exercício 2</h1>
+        <h3>Aquecimento</h3>
+        <p>1: 21 processos</p>
+        <p>
+            [
+                {
+                    "codigo": "900.10.001",
+                    "titulo": "Conceção e realização de atividades ou acontecimentos artísticos",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.10.001",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.10.002",
+                    "titulo": "Conceção e realização de atividades desportivas ou recreativas",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.10.002",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.10.500",
+                    "titulo": "Organização e participação em homenagens e cerimónias comemorativas",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.10.500",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.10.501",
+                    "titulo": "Organização e participação em iniciativas de partilha e debate crítico",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.10.501",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.10.502",
+                    "titulo": "Organização e participação em iniciativas de prevenção e sensibilização",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.10.502",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.10.503",
+                    "titulo": "Organização e participação em iniciativas de promoção ou divulgação de produtos e serviços",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.10.503",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.10.504",
+                    "titulo": "Publicitação de iniciativas e atividades de terceiros",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.10.504",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.10.505",
+                    "titulo": "Organização e participação em cerimónia religiosa",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.10.505",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.001",
+                    "titulo": "Criação de imagem e identidade gráficas",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.001",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.002",
+                    "titulo": "Criação de produtos e artigos promocionais",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.002",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.200",
+                    "titulo": "Conceção de conteúdos institucionais para divulgação",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.200",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.201",
+                    "titulo": "Edição e publicação de conteúdos",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.201",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.400",
+                    "titulo": "Elaboração de informações ou esclarecimentos institucionais para a comunicação social",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.400",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.401",
+                    "titulo": "Promoção ou participação em conferências de imprensa e entrevistas",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.401",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.402",
+                    "titulo": "Recolha e tratamento de dados de imprensa",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.402",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.600",
+                    "titulo": "Criação e atualização de contactos institucionais",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.600",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.601",
+                    "titulo": "Organização de cerimónias protocolares",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.601",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.602",
+                    "titulo": "Organização de visitas institucionais",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.602",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.603",
+                    "titulo": "Processamento de pedidos de audiência",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.603",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.604",
+                    "titulo": "Processamento de pedidos de informação e de esclarecimento",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.604",
+                    "status": "A"
+                },
+                {
+                    "codigo": "900.20.605",
+                    "titulo": "Processamento de mensagens de cortesia",
+                    "id": "http://jcr.di.uminho.pt/m51-clav#c900.20.605",
+                    "status": "A"
+                }
+            ]
+        </p>
+        <p>2: 637 entidades </p>
+        <p>3: 8 processos</p>
+        <p>4: 5 processos</p>
+
+        <p>
+            Para correr o servidor, na pasta ex2/, basta executar os comandos:
+                npm i
+            e 
+                npm start
+        </p>
+       
+    </abstract>
+    <deliverables>
+        <link url="/ex1">Exercício 1</link>
+        <link url="/ex2">Exercício 2</link>
+    </deliverables>
+</pr>

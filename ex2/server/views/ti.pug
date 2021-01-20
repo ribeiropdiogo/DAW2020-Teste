@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .w3-top
+    .w3-bar.w3-teal
+      a.w3-bar-item.w3-button(href='/') Início
+  br
+  .w3-container.w3-margin
+    h1 Termos de Índice
+    .w3-container.w3-margin
+      .w3-responsive
+        table.w3-table-all.w3-hoverable
+          tr
+            th Termo
+            th ID Classe
+            th Título Classe
+          each t in ti
+            tr(id=t.id)
+              th= t.termo
+              th
+                a(href='/classes/'+t.idClasse)= t.idClasse
+              th
+                a(href='/classes/'+t.idClasse)= t.tituloClasse
+        
+      br
+        
+      .w3-container.w3-margin
+        button.w3-button.w3-teal.w3-large(type='button', id='back', onclick='history.back();', style='margin: 10px') Voltar
+        button.w3-button.w3-teal.w3-large(type='button', id='home', onclick='window.location.href="/";', style='margin: 10px') Página Inicial

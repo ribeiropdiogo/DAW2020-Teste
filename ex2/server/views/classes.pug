@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .w3-top
+    .w3-bar.w3-teal
+      a.w3-bar-item.w3-button(href='/') Início
+  br
+  .w3-container.w3-margin
+    h1 Classes Nível 1
+    .w3-container.w3-margin
+      h3 Lista
+      ul.w3-ul.w3-hoverable
+        each c in classes
+          li
+            a(href='/classes/'+c.codigo) #{c.codigo}
+            |  - #{c.titulo}
+        
+        br
+        
+        .w3-container.w3-margin
+            button.w3-button.w3-teal.w3-large(type='button', id='back', onclick='history.back();', style='margin: 10px') Voltar
+            button.w3-button.w3-teal.w3-large(type='button', id='home', onclick='window.location.href="/";', style='margin: 10px') Página Inicial
